@@ -22,9 +22,9 @@ public class RelogioTest {
     public void testIniciaRelogioComTempoErrada() {
         Relogio relogio = new Relogio(40, 22, 61);
 
-        assertEquals(00, relogio.getHora());
-        assertEquals(00, relogio.getMinuto());
-        assertEquals(00, relogio.getSegundo());
+        assertEquals(0, relogio.getHora());
+        assertEquals(0, relogio.getMinuto());
+        assertEquals(0, relogio.getSegundo());
     }
 
     @Test
@@ -44,9 +44,9 @@ public class RelogioTest {
         
         relogio.reiniciaMeiaNoite();
 
-        assertEquals(00, relogio.getHora());
-        assertEquals(00, relogio.getMinuto());
-        assertEquals(00, relogio.getSegundo());
+        assertEquals(0, relogio.getHora());
+        assertEquals(0, relogio.getMinuto());
+        assertEquals(0, relogio.getSegundo());
 
     }
 
@@ -54,7 +54,7 @@ public class RelogioTest {
     public void testMarcaIntervaloTempo() {
         Relogio relogio = new Relogio();
         
-        string resultado = relogio.marcaIntervaloTempo("12:35:20", "12:45:25");
+        String resultado = relogio.marcaIntervaloTempo("12:35:20", "12:45:25");
 
         assertEquals("00:10:05", resultado);
 
@@ -64,7 +64,7 @@ public class RelogioTest {
     public void testImprimeHora() {
         Relogio relogio = new Relogio(12, 24, 48);
 
-        string resultado = relogio.imprimeHora();
+        String resultado = relogio.imprimeHora();
 
         assertEquals("12:24:48", resultado);
 
