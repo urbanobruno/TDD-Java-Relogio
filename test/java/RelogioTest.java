@@ -19,6 +19,15 @@ public class RelogioTest {
     }
 
     @Test
+    public void testIniciaRelogioComTempoErrada() {
+        Relogio relogio = new Relogio(40, 22, 61);
+
+        assertEquals(00, relogio.getHora());
+        assertEquals(00, relogio.getMinuto());
+        assertEquals(00, relogio.getSegundo());
+    }
+
+    @Test
     public void testConfiguraRelogio() {
         Relogio relogio = new Relogio();
         
