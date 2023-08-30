@@ -23,7 +23,7 @@ public class Relogio {
             this.hora = hora;
             this.minuto = minuto;
             this.segundo = segundo;
-
+            
         } else {
             this.hora = 0;
             this.minuto = 0;
